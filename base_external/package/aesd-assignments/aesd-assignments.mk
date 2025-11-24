@@ -9,7 +9,7 @@ AESD_ASSIGNMENTS_VERSION = e808f3a87c0cb3b8104fb084fb7880cccf0ad9a4
 
 
 # SSH URL to your assignment-3-and-later repo
-AESD_ASSIGNMENTS_SITE = git@github.com:adil619/assignments-3-and-later.git
+AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-adil619.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
@@ -31,7 +31,6 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	# Install shell scripts
 	$(INSTALL) -D -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/finder.sh
 	$(INSTALL) -D -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin/finder-test.sh
-	$(INSTALL) -D -m 0755 $(@D)/finder-app/tester.sh $(TARGET_DIR)/usr/bin/tester.sh
 
 	# Install configuration directory
 	$(INSTALL) -d $(TARGET_DIR)/etc/finder-app/conf
